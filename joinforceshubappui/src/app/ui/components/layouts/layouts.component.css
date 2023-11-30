@@ -1,0 +1,32 @@
+.navbar-brand {
+    color: #4F200D; 
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+
+  .offcanvas-title {
+    color: #4F200D; 
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+
+  .nav-link{
+    color: black ; 
+    font-family: 'Domine', serif;
+    font-size: 1.1rem;
+  }
+  .rownavbar-custom{
+    height: 30px;
+  }
+  .rowcontent-custom{
+    height: 520px;
+    overflow-y: scroll !important;
+  }
+  .container{
+    overflow: hidden; 
+  }
+  
