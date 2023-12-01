@@ -1,0 +1,17 @@
+.home-title{
+    display:flex;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+.home-subtitle{
+    display:flex;
+    justify-content: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
