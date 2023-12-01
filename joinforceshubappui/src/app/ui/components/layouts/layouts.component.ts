@@ -10,5 +10,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './layouts.component.css'
 })
 export class LayoutsComponent {
+ isAdmin = false;
+ private isMenuOpen = true;
+
+isAdminUser():boolean {
+  return this.isAdmin;
+}
 
 }

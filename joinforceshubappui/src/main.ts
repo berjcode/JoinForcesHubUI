@@ -20,7 +20,14 @@ bootstrapApplication(AppComponent, {
               loadComponent: () =>
                 import('./app/ui/components/default/home/home.component').then(
                   (c) => c.HomeComponent
-                )
+                ),
+            },
+            {
+              path: 'advertisement',
+              loadComponent: () =>
+                import('./app/ui/components/default/advertisement/advertisement.component').then(
+                  (c) => c.AdvertisementComponent
+                ),
             },
           ],
         },

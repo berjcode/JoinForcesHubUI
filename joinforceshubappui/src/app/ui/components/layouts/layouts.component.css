@@ -29,4 +29,15 @@
   .container{
     overflow: hidden; 
   }
-  
+  .none {
+  display: none;
+}
+.notNone {
+  display:block;
+}
+
+.app-title{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #F6F1E9;
+  margin-left: 10px;
+}

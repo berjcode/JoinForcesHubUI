@@ -1,0 +1,14 @@
+.card-img-top{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 90px;
+    height: 90px;
+}
+
+.card {
+    display: flex;
+    align-items: center; /* Dikey hizalama */
+    border: 1px solid #c11717;
+    padding: 16px;
+    margin: 16px;
+  } 
