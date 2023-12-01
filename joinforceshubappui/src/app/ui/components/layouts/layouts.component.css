@@ -41,3 +41,18 @@
   color: #F6F1E9;
   margin-left: 10px;
 }
+
+.d-block{
+  color: #F6F1E9 !important;
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 22px !important;
+}
+.menu-item{
+  color: #F6F1E9 !important;
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-style: bold !important;
+  font-size: 14px !important;
+}
+.nav-item {
+  border-bottom: 1px solid #ccc; /* 1 piksel kalınlığında, gri renkli çizgi */
+}

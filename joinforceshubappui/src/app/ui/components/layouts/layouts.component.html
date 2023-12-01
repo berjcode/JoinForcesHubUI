@@ -4,7 +4,7 @@
       <!-- Left navbar links -->
       <li class="nav-item m-2">
         <a class="nav-link bg-light" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li> 
+      </li>   
       <h2 class="app-title"> JoinforcesHub </h2>
   
       <!-- Right navbar links -->
@@ -87,11 +87,6 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-            <i class="fas fa-expand-arrows-alt"></i>
-          </a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
             <i class="fas fa-th-large"></i>
           </a>
@@ -101,78 +96,74 @@
     <!-- /.navbar -->
   
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4" >
-      <!-- Brand Logo -->
-      <a href="#" class="brand-link">
-        <img src="https://media-sof1-2.cdn.whatsapp.net/v/t61.24694-24/403188215_2398024637060116_5437219348899559415_n.jpg?ccb=11-4&oh=01_AdTi1TejdWRo3R2BXp_FonbuNVusP4GSfD8Gh8RxD26y7g&oe=65757739&_nc_sid=e6ed6c&_nc_cat=107" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">JoinforcesHub</span>
-      </a>
-  
+    <aside class="main-sidebar sidebar-dark-primary elevation-3">
       <!-- Sidebar -->
-      <div class="sidebar">
+      <div class="sidebar"  >
         <!-- Sidebar user (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
             <img src="https://media-sof1-2.cdn.whatsapp.net/v/t61.24694-24/403188215_2398024637060116_5437219348899559415_n.jpg?ccb=11-4&oh=01_AdTi1TejdWRo3R2BXp_FonbuNVusP4GSfD8Gh8RxD26y7g&oe=65757739&_nc_sid=e6ed6c&_nc_cat=107" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">Abdullah Balıkçı</a>
+            <a href="#" class="d-block" >Abdullah Balıkçı</a>
           </div>
         </div>
-  
-        <!-- SidebarSearch Form -->
-        <div class="form-inline">
-          <div class="input-group" data-widget="sidebar-search">
-            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-            <div class="input-group-append">
-              <button class="btn btn-sidebar">
-                <i class="fas fa-search fa-fw"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-  
         <!-- Sidebar Menu -->
         <nav class="mt-2" [ngClass]="{'none': !isAdminUser()}">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Add icons to the links using the .nav-icon class
-                 with font-awesome or any other icon font library -->
+         
                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="nav-icon fas fa-tachometer-alt"></i>
-                      <p>
-                        İlanlar
-                      </p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <i class="bi bi-chat-square"></i>
-                      <p>
-                        Mesajlar
-                      </p>
-                    </a>
-                  </li>
+                  <a href="#" class="nav-link">
+                    <i class="bi bi-microsoft-teams"></i>
+                    <p class="menu-item">
+                      Takımlar
+                    </p>
+                  </a>
+                </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-microsoft-teams"></i>
+                  <p class="menu-item">
+                    İlanlar
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-chat-dots"></i>
+                  <p class="menu-item">
+                    Mesajlar
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="bi bi-bell-fill"></i>
+                  <p class="menu-item">
+                    Bildirimler
+                  </p>
+                </a>
+              </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p>
+                <i class="bi bi-people"></i>
+                <p class="menu-item">
                   Kullanıcılar
                 </p>
               </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>
+                  <i class="bi bi-person-fill-lock"></i>
+                  <p class="menu-item">
                     Roller
-                  </p>
+                  </p >
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>
+                  <i class="bi bi-gear"></i>
+                  <p class="menu-item">
                     Ayarlar
                   </p>
                 </a>
@@ -181,20 +172,18 @@
         </nav>
         <nav class="mt-2" [ngClass]="{'notNone': isAdminUser()}">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Add icons to the links using the .nav-icon class
-                 with font-awesome or any other icon font library -->
                  <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="nav-icon fas fa-tachometer-alt"></i>
-                      <p>
+                      <i class="bi bi-house"></i>
+                      <p class="menu-item">
                         AnaSayfa
                       </p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="nav-icon fas fa-tachometer-alt"></i>
-                      <p>
+                      <i class="bi bi-person"></i>
+                      <p class="menu-item">
                         Profil
                       </p>
                     </a>
@@ -202,40 +191,40 @@
                
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>
+                  <i class="bi bi-microsoft-teams"></i>
+                  <p class="menu-item">
                     Takımlar
                   </p>
                 </a>
               </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p>
+                <i class="bi bi-microsoft-teams"></i>
+                <p class="menu-item">
                   İlanlar
                 </p>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p>
+                <i class="bi bi-chat-dots"></i>
+                <p class="menu-item">
                   Mesajlar
                 </p>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p>
+                <i class="bi bi-bell-fill"></i>
+                <p class="menu-item">
                   Bildirimler
                 </p>
               </a>
             </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-tachometer-alt"></i>
-                  <p>
+                  <i class="bi bi-gear"></i>
+                  <p class="menu-item">
                     Ayarlar
                   </p>
                 </a>
