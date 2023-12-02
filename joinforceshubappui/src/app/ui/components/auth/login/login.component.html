@@ -1,1 +1,21 @@
-<p>login works!</p>
+<br><br><br><br><div class="container" id="container">
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Giriş Yap</h1>
+			<br>
+			<input type="text" #email name="email" required minlength="3" ngModel placeholder="email"  [validInput]="email.validity.valid" />
+			<input type="password"  #Password name="Password" required minlength="5" ngModel placeholder="Password" [validInput]="Password.validity.valid"/>
+			<a href="#">Şifremi Unuttum</a>
+			<button type="submit" >Giriş</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-right">
+				<h1>JoinforcesHub</h1>
+				<p>build your team</p>
+				<button class="ghost" id="signUp">Hesap Oluştur</button>
+			</div>
+		</div>
+	</div>
+</div>
