@@ -35,13 +35,16 @@ export class ErrorService {
           }
           break;
         case 500:
-          if(err.error.Errors){
-            err.error.Errors.forEach((element:any) => {
-              this._toastr.toast(ToastrType.Error, "Hata!", element)
-              console.log(element)
-            });
-          }else{
-            this._toastr.toast(ToastrType.Error, "Hata!",err.error.Message)
+          if (err.error.message) {
+            if (Array.isArray(err.error.message)) {
+              err.error.message.forEach((errorMessage: string) => {
+                this._toastr.toast(ToastrType.Error, "Hata!", errorMessage);
+              });
+            } else {
+              this._toastr.toast(ToastrType.Error, "Hata!", err.error.message);
+            }
+          } else {
+            this._toastr.toast(ToastrType.Error, "Hata!", err.error.Message);
           }
           break;
 
