@@ -3,9 +3,11 @@ import { AppComponent } from './app/app.component';
 import { importProvidersFrom } from '@angular/core';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { AuthGuard } from './app/ui/components/auth/guards/auth.guard';
+import { provideHttpClient } from '@angular/common/http';
 
 bootstrapApplication(AppComponent, {
   providers: [
+    provideHttpClient(),
     importProvidersFrom(
       BrowserModule,
       RouterModule.forRoot([
@@ -15,7 +17,7 @@ bootstrapApplication(AppComponent, {
             import('./app/ui/components/layouts/layouts.component').then(
               (c) => c.LayoutsComponent
             ),
-            canActivateChild : [AuthGuard],
+            canActivateChild: [AuthGuard],
           children: [
             {
               path: '',
