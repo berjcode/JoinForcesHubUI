@@ -2,11 +2,10 @@
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-dark navbar-light">
     <!-- Left navbar links -->
-    <li class="nav-item m-2">
-      <a class="nav-link bg-dark" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+    <li class="nav-item">
+      <a class="nav-link" style="background-color: black !important ;" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
     </li>
     <h2 class="app-title"> JoinforcesHub </h2>
-
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
@@ -47,7 +46,8 @@
             class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Abdullah Balıkçı</a>
+          <a href="#" class="d-block">{{loginResponse.result.firstname}} {{loginResponse.result.surName}}</a>
+          <span >Software Developer</span>
         </div>
       </div>
       <!-- Sidebar Menu -->
@@ -169,6 +169,14 @@
               <p class="menu-item">
                 Ayarlar
               </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-gear"></i>
+              <a class="menu-item" (click)="logout()">
+                Çıkış Yap
+              </a>
             </a>
           </li>
         </ul>

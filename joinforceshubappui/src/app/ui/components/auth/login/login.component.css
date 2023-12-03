@@ -10,26 +10,29 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-	font-weight: bold;
 	margin: 0;
+	font-weight: bold;
+	font-family: 'Nova Square', sans-serif;
 }
 
 h2 {
 	text-align: center;
+	font-family: 'Nova Square', sans-serif;
 }
 
 p {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
-	letter-spacing: 0.5px;
 	margin: 20px 0 30px;
+	letter-spacing: 0.5px;
+	font-family: 'Nova Square', sans-serif;
 }
 
 span {
@@ -39,6 +42,7 @@ span {
 a {
 	color: #333;
 	font-size: 14px;
+	font-family: 'Nova Square', sans-serif;
 	text-decoration: none;
 	margin: 15px 0;
 }
@@ -47,6 +51,7 @@ button {
 	border-radius: 20px;
 	border: 1px solid #ff2600;
 	background-color: #ff2600;
+	font-family: 'Nova Square', sans-serif;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -83,6 +88,7 @@ form {
 input {
 	background-color: #eee;
 	border: none;
+	font-family: 'Nova Square', sans-serif;
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;

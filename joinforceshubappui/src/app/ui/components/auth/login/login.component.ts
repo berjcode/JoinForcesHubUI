@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { ValidInputDirective } from '../../../../common/valid-input.directive';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -13,4 +14,15 @@ import { ValidInputDirective } from '../../../../common/valid-input.directive';
 })
 export class LoginComponent {
 
+  constructor(
+    private _auth : AuthService
+  ){
+  }
+
+
+  login(form:NgForm){
+    if(form.valid){
+     this._auth.login(form.value);
+    }
+  }
 }

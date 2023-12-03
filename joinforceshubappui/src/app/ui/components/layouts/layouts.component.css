@@ -14,11 +14,7 @@
     margin-top: 2px;
   }
 
-  .nav-link{
-    color: black ; 
-    font-family: 'Domine', serif;
-    font-size: 1.1rem;
-  }
+ 
   .rownavbar-custom{
     height: 30px;
   }
@@ -53,10 +49,6 @@
   font-style: bold !important;
   font-size: 16px !important;
 }
-.nav-item {
-  border-bottom: 1px solid #000000; /* 1 piksel kalınlığında, gri renkli çizgi */
-}
-
 .main-header{
   background-color: #F2F2F2;
   color: #000000 !important;

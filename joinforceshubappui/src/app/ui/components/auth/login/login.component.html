@@ -1,12 +1,18 @@
 <br><br><br><br><div class="container" id="container">
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="#" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
 			<h1>Giriş Yap</h1>
 			<br>
 			<input type="text" #email name="email" required minlength="3" ngModel placeholder="email"  [validInput]="email.validity.valid" />
+            <div class="invalid-feedback" >
+                Email Hatalı 
+            </div>
 			<input type="password"  #Password name="Password" required minlength="5" ngModel placeholder="Password" [validInput]="Password.validity.valid"/>
+            <div class="invalid-feedback">
+                Şifre Hatalı 
+            </div>
 			<a href="#">Şifremi Unuttum</a>
-			<button type="submit" >Giriş</button>
+			<button  type="submit" [disabled]="!loginForm.valid" >Giriş</button>
 		</form>
 	</div>
 	<div class="overlay-container">

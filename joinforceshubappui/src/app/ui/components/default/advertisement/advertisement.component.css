@@ -1,14 +1,29 @@
 .card-img-top{
-    border-radius: 50%;
-    object-fit: cover;
-    width: 90px;
     height: 90px;
+    width: 90px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .card {
-    display: flex;
-    align-items: center; /* Dikey hizalama */
-    border: 1px solid #c11717;
-    padding: 16px;
+    width: 90%;
     margin: 16px;
+    display: flex;
+    padding: 16px;
+    align-items: center; /* Dikey hizalama */
+    border: 1px solid #000000;
+    font-family: 'Nova Square', sans-serif;
   } 
+
+  .card-col{
+    overflow-y: scroll;height: 500px;
+  }
+
+  .card-footer{
+    color: black !important;
+    font-family: 'Nova Square', sans-serif !important;
+  }
+
+  .btn-lg{
+    font-family: 'Nova Square', sans-serif !important;
+  }
