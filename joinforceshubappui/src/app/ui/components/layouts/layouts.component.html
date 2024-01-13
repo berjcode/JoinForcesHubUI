@@ -1,206 +1,167 @@
-<div class="wrapper">
-  <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-dark navbar-light">
-    <!-- Left navbar links -->
-    <li class="nav-item">
-      <a class="nav-link" style="background-color: black !important ;" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-    </li>
-    <h2 class="app-title"> JoinforcesHub </h2>
-    <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
-      <!-- Navbar Search -->
-      <li class="nav-item">
-        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-          <i class="fas fa-search"></i>
-        </a>
-        <div class="navbar-search-block">
-          <form class="form-inline">
-            <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-              <div class="input-group-append">
-                <button class="btn btn-navbar" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                  <i class="fas fa-times"></i>
-                </button>
-              </div>
+<div >
+  <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-white" id="sidenavAccordion">
+    <a class="navbar-brand" href="index.html">JoinforcesHub</a>
+   
+    <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 mr-lg-2" id="sidebarToggle"><i data-feather="menu"></i></button>
+    <ul class="navbar-nav align-items-center ml-auto">
+        <li class="nav-item dropdown no-caret d-none d-sm-block mr-3 dropdown-notifications">
+            <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownAlerts" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-bell-fill"></i></a>
+            <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownAlerts">
+                <h6 class="dropdown-header dropdown-notifications-header">
+                  <i class="bi bi-bell"></i>
+                    Alerts Center
+                </h6>
+                <!-- Example Alert 1-->
+                <a class="dropdown-item dropdown-notifications-item" href="#!">
+                    <div class="dropdown-notifications-item-icon bg-warning"><i class="bi bi-bell"></i></div>
+                    <div class="dropdown-notifications-item-content">
+                        <div class="dropdown-notifications-item-content-details">December 29, 2020</div>
+                        <div class="dropdown-notifications-item-content-text">This is an alert message. It's nothing serious, but it requires your attention.</div>
+                    </div>
+                </a>
+                <!-- Example Alert 2-->
+                <a class="dropdown-item dropdown-notifications-item" href="#!">
+                    <div class="dropdown-notifications-item-icon bg-info"><i data-feather="bar-chart"></i></div>
+                    <div class="dropdown-notifications-item-content">
+                        <div class="dropdown-notifications-item-content-details">December 22, 2020</div>
+                        <div class="dropdown-notifications-item-content-text">A new monthly report is ready. Click here to view!</div>
+                    </div>
+                </a>
+                <!-- Example Alert 3-->
+                <a class="dropdown-item dropdown-notifications-item" href="#!">
+                    <div class="dropdown-notifications-item-icon bg-danger"><i class="fas fa-exclamation-triangle"></i></div>
+                    <div class="dropdown-notifications-item-content">
+                        <div class="dropdown-notifications-item-content-details">December 8, 2020</div>
+                        <div class="dropdown-notifications-item-content-text">Critical system failure, systems shutting down.</div>
+                    </div>
+                </a>
+                <!-- Example Alert 4-->
+                <a class="dropdown-item dropdown-notifications-item" href="#!">
+                    <div class="dropdown-notifications-item-icon bg-success"><i data-feather="user-plus"></i></div>
+                    <div class="dropdown-notifications-item-content">
+                        <div class="dropdown-notifications-item-content-details">December 2, 2020</div>
+                        <div class="dropdown-notifications-item-content-text">New user request. Woody has requested access to the organization.</div>
+                    </div>
+                </a>
+                <a class="dropdown-item dropdown-notifications-footer" href="#!">View All Alerts</a>
             </div>
-          </form>
-        </div>
-      </li>
-
+        </li>
+        <!-- Messages Dropdown-->
+        <li class="nav-item dropdown no-caret d-none d-sm-block mr-3 dropdown-notifications">
+            <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-chat-dots-fill"></i></a>
+            <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownMessages">
+                <h6 class="dropdown-header dropdown-notifications-header">
+                  <i class="bi bi-chat-dots-fill"></i>
+                    Message Center
+                </h6>
+                <!-- Example Message 1  -->
+                <a class="dropdown-item dropdown-notifications-item" href="#!">
+                    <img class="dropdown-notifications-item-img" src="assets/img/illustrations/profiles/profile-2.png" />
+                    <div class="dropdown-notifications-item-content">
+                        <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        <div class="dropdown-notifications-item-content-details">Thomas Wilcox · 58m</div>
+                    </div>
+                </a>
+                <!-- Example Message 2-->
+                <a class="dropdown-item dropdown-notifications-item" href="#!">
+                    <img class="dropdown-notifications-item-img" src="assets/img/illustrations/profiles/profile-3.png" />
+                    <div class="dropdown-notifications-item-content">
+                        <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        <div class="dropdown-notifications-item-content-details">Emily Fowler · 2d</div>
+                    </div>
+                </a>
+                <!-- Example Message 3-->
+                <a class="dropdown-item dropdown-notifications-item" href="#!">
+                    <img class="dropdown-notifications-item-img" src="assets/img/illustrations/profiles/profile-4.png" />
+                    <div class="dropdown-notifications-item-content">
+                        <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        <div class="dropdown-notifications-item-content-details">Marshall Rosencrantz · 3d</div>
+                    </div>
+                </a>
+                <!-- Example Message 4-->
+                <a class="dropdown-item dropdown-notifications-item" href="#!">
+                    <img class="dropdown-notifications-item-img" src="assets/img/illustrations/profiles/profile-5.png" />
+                    <div class="dropdown-notifications-item-content">
+                        <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        <div class="dropdown-notifications-item-content-details">Colby Newton · 3d</div>
+                    </div>
+                </a>
+                <!-- Footer Link-->
+                <a class="dropdown-item dropdown-notifications-footer" href="#!">Read All Messages</a>
+            </div>
+        </li>
+        <!-- User Dropdown-->
+        <li class="nav-item dropdown no-caret mr-3 mr-lg-0 dropdown-user">
+            <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid"  [src]="loadImages(loginResponse.result.photoPath)" /></a>
+            <div class="dropdown-menu dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
+                <h6 class="dropdown-header d-flex align-items-center">
+                    <img class="dropdown-user-img" [src]="loadImages(loginResponse.result.photoPath)"/>
+                    <div class="dropdown-user-details">
+                        <div class="dropdown-user-details-name">Valerie Luna</div>
+                        <div class="dropdown-user-details-email">vlunaaol.com</div>
+                    </div>
+                </h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#!">
+                    <div class="dropdown-item-icon"><i data-feather="settings"></i></div>
+                    Account
+                </a>
+                <a class="dropdown-item" href="#!">
+                    <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
+                    Logout
+                </a>
+            </div>
+        </li>
     </ul>
-  </nav>
+</nav>
+<div id="layoutSidenav">
+  <div id="layoutSidenav_nav">
+      <nav class="sidenav shadow-right sidenav-light">
+          <div class="sidenav-menu">
+              <div class="nav accordion" id="accordionSidenav"> 
+                      <div class="sidenav-menu-heading"></div>
+                  <!-- Sidenav Accordion (Dashboard)-->
+                  <a class="nav-link collapsed">
+                    <i class="bi bi-people-fill"></i>    Takımlar
+                </a>
+                  <a class="nav-link collapsed">
+                    <i class="bi bi-badge-ad-fill"></i>   İlanlar 
+                </a>
+
+                <a class="nav-link"> 
+                  <i class="bi bi-app-indicator"></i>    Başvurular
+              </a>
+              <div class="sidenav-menu-heading"> Kullanıcı İşlemleri</div>
+
+              <a class="nav-link collapsed">
+                <i class="bi bi-person-fill"></i>     Profil
+            </a>
+              </div>
+          </div>
+          <!-- Sidenav Footer-->
+          <div class="sidenav-footer">
+              <div class="sidenav-footer-content">
+                  <div class="sidenav-footer-subtitle">Giriş Yapan Kullanıcı:</div>
+                  <div class="sidenav-footer-title">{{loginResponse.result.firstname}} {{loginResponse.result.surName}}</div>
+                  <span>{{loginResponse.result.userJobTitle}}</span>
+              </div>
+          </div>
+      </nav>
+  </div>  
+  <div id="layoutSidenav_content">
+      <main>
+          <router-outlet></router-outlet>
+      </main>
+      <footer class="footer mt-auto footer-light">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-6 small">berjcode</div>
+              </div>
+          </div>
+      </footer>
+  </div>
+</div>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-3">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img
-          [src]="loadImages(loginResponse.result.photoPath)"
-            class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">{{loginResponse.result.firstname}} {{loginResponse.result.surName}}</a>
-          <span >{{loginResponse.result.userJobTitle}}</span>
-        </div>
-      </div>
-      <!-- Sidebar Menu -->
-      <nav class="mt-2" [ngClass]="{'none': !isAdminUser()}">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-microsoft-teams"></i>
-              <p class="menu-item">
-                Takımlar
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-microsoft-teams"></i>
-              <p class="menu-item">
-                İlanlar
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-chat-dots"></i>
-              <p class="menu-item">
-                Mesajlar
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-bell-fill"></i>
-              <p class="menu-item">
-                Bildirimler
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-people"></i>
-              <p class="menu-item">
-                Kullanıcılar
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-person-fill-lock"></i>
-              <p class="menu-item">
-                Roller
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-gear"></i>
-              <p class="menu-item">
-                Ayarlar
-              </p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="mt-2" [ngClass]="{'notNone': isAdminUser()}">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-house"></i>
-              <p class="menu-item">
-                AnaSayfa
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-person"></i>
-              <p class="menu-item">
-                Profil
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-microsoft-teams"></i>
-              <p class="menu-item">
-                Takımlar
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-microsoft-teams"></i>
-              <p class="menu-item">
-                İlanlar
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-chat-dots"></i>
-              <p class="menu-item">
-                Mesajlar
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-bell-fill"></i>
-              <p class="menu-item">
-                Bildirimler
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-gear"></i>
-              <p class="menu-item">
-                Ayarlar
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="bi bi-gear"></i>
-              <a class="menu-item" (click)="logout()">
-                Çıkış Yap
-              </a>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-  </aside>
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Main content -->
-    <section class="content">
-      <br>
-      <router-outlet></router-outlet>
-
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-  <footer class="main-footer bg-light">
-    <div class="float-right d-none d-sm-block">
-      <b>Version</b> 1.0.0
-    </div>
-    <strong>Copyright &copy; 2023 <a href="#">berjcode</a>.</strong> Open Source Project
-  </footer>
-</div>
+ 

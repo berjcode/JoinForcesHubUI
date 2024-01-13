@@ -1,3 +1,4 @@
+import { ToastrService, ToastrType } from './../../../../services/toastr.service';
 import { CryptoService } from './../../../../services/crypto.service';
 import { Injectable } from '@angular/core';
 import { GenericHttpService } from '../../../../services/generic-http.service';
@@ -14,6 +15,7 @@ export class AuthService {
   constructor(
     private _http :GenericHttpService,
     private _router : Router,
+    private _toastr : ToastrService,
     private _crypto: CryptoService
     ) { }
 
@@ -21,12 +23,19 @@ export class AuthService {
     this._http.post<LoginResponseModel>(this.api, model,res => {
       let cryptoValue = this._crypto.encrypto(JSON.stringify(res));
       localStorage.setItem("accessToken",cryptoValue);
-
+      this._toastr.toast(ToastrType.Success, "Başarılı!", "Yönlendirme Yapılıdı")
       this._router.navigateByUrl("/")
+
     })
   }
   logout(){
     localStorage.removeItem("accessToken");
-    this._router.navigateByUrl("/login");
+   const waitingTime =3000;
+   
+   setTimeout(()=> {
+    this._toastr.toast(ToastrType.Success, "Başarılı!", "Yönlendirme yapılıyor")
+    
+   },waitingTime);
+   this._router.navigateByUrl("/login");
   }
 }

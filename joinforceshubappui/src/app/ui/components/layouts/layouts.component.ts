@@ -35,6 +35,7 @@ logout(){
 
 loadImages(folderPath: string): string {
   const imagePath = `https://localhost:7051/api/Files?path=${folderPath}`;
+
   return imagePath;
 }
 }
