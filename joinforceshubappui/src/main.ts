@@ -32,6 +32,33 @@ bootstrapApplication(AppComponent, {
                 import('./app/ui/components/default/advertisement/advertisement.component').then(
                   (c) => c.AdvertisementComponent
                 ),
+            }, {
+              path: 'userprofile',
+              loadComponent: () =>
+                import('./app/ui/components/default/userprofile/userprofile.component').then(
+                  (c) => c.UserprofileComponent
+                ),
+            },
+            {
+              path: 'createteam',
+              loadComponent: () =>
+                import('./app/ui/components/default/createteam/createteam.component').then(
+                  (c) => c.CreateteamComponent
+                ),
+            },
+            {
+              path: 'createandjointeam',
+              loadComponent: () =>
+                import('./app/ui/components/default/createandjointeam/createandjointeam.component').then(
+                  (c) => c.CreateandjointeamComponent
+                ),
+            },
+            {
+              path: 'teams',
+              loadComponent: () =>
+                import('./app/ui/components/default/teams/teams.component').then(
+                  (c) => c.TeamsComponent
+                ),
             },
           ],
         },
