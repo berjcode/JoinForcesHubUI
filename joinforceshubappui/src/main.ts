@@ -60,6 +60,27 @@ bootstrapApplication(AppComponent, {
                   (c) => c.TeamsComponent
                 ),
             },
+            {
+              path: 'applications',
+              loadComponent: () =>
+                import('./app/ui/components/default/applications/applications.component').then(
+                  (c) => c.ApplicationsComponent
+                ),
+            },
+            {
+              path: 'userreport',
+              loadComponent: () =>
+                import('./app/ui/components/default/userreport/userreport.component').then(
+                  (c) => c.UserreportComponent
+                ),
+            },
+            {
+              path: 'changepassword',
+              loadComponent: () =>
+                import('./app/ui/components/default/changepassword/changepassword.component').then(
+                  (c) => c.ChangepasswordComponent
+                ),
+            },
           ],
         },
         {

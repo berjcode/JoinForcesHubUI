@@ -1,4 +1,11 @@
-<div >
+<style>
+     .teams-link {
+        cursor: pointer; 
+        font-size: 20px;
+    }
+    
+</style>
+
   <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-white" id="sidenavAccordion">
     <a class="navbar-brand" href="index.html">JoinforcesHub</a>
    
@@ -55,32 +62,31 @@
           <div class="sidenav-menu">
               <div class="nav accordion" id="accordionSidenav"> 
                       <div class="sidenav-menu-heading"></div>
-                  <!-- Sidenav Accordion (Dashboard)-->
-                  <a class="nav-link collapsed">
+                  <a class="nav-link collapsed teams-link" routerLink="/teams">
                     <i class="bi bi-people-fill"></i>    Teams
                 </a>
-                  <a class="nav-link collapsed">
+                  <a class="nav-link collapsed teams-link" routerLink="/advertisement">
                     <i class="bi bi-badge-ad-fill"></i>   Advertisement 
                 </a>
 
-                <a class="nav-link"> 
-                  <i class="bi bi-app-indicator"></i>    Applications
+                <a class="nav-link teams-link" routerLink="/applications"> 
+                    <i class="bi bi-window-dock"></i>   Applications
               </a>
-              <a class="nav-link"> 
-                <i class="bi bi-app-indicator"></i>    Create a Team & Join
+              <a class="nav-link teams-link" routerLink="/createandjointeam"> 
+                <i class="bi bi-person-plus-fill"></i> Create a Team & Join
             </a>
-              <div class="sidenav-menu-heading"> User operations</div>
+              <div class="sidenav-menu-heading text-dark"> User operations</div>
 
-              <a class="nav-link collapsed">
+              <a class="nav-link collapsed teams-link" routerLink="/userprofile">
                 <i class="bi bi-person-fill"></i>     Profile
             </a>
 
-            <a class="nav-link collapsed">
-                <i class="bi bi-person-fill"></i>     Change Password
+            <a class="nav-link collapsed teams-link" routerLink="/changepassword">
+                <i class="bi bi-person-check"></i>    Change Password
             </a>
 
-            <a class="nav-link collapsed">
-                <i class="bi bi-person-fill"></i>     Report
+            <a class="nav-link collapsed teams-link" routerLink="/userreport">
+                <i class="bi bi-bar-chart-line-fill"></i>   Report
             </a>
               </div>
           </div>
@@ -107,7 +113,3 @@
       </footer>
   </div>
 </div>
-  <!-- /.navbar -->
-
-  <!-- Main Sidebar Container -->
- 
